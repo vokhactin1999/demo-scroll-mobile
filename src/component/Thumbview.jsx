@@ -14,7 +14,7 @@ const Thumbview = ({pickerValue}) => {
     }
     return (
         <div style={{height:'440px',width:'100%', display:'flex',alignItems:'center',justifyContent:'center'}}>
-            <div style={{width:'30%'}}>
+            <div style={{width:'40%'}}>
             {renderImageTag()}
             </div>
      
