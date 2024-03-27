@@ -7,7 +7,7 @@ const imgList =  [{id:1, title:'Lennon'}, {id:2, title: 'Jackson'}, {id:3, title
 function ThumbViewScroll({pickerValue, handleSetValue}) {
 
   return (
-    <div className='scroll-list-wrapper'>
+    <div className='scroll-list-wrapper' style={{height:'30%'}}>
     <Picker value={pickerValue} onChange={handleSetValue} wheel="normal" itemHeight={72} height={216} className="picker-scroll">
         <Picker.Column key={name} name='thumbId'>
           {imgList.map(option => (
