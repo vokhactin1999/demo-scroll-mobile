@@ -8,14 +8,14 @@ function ThumbViewScroll({pickerValue, handleSetValue}) {
 
   return (
     <div className='scroll-list-wrapper' style={{height:'30%'}}>
-    <Picker value={pickerValue} onChange={handleSetValue} wheel="normal" itemHeight={72} height={216} className="picker-scroll">
+    <Picker value={pickerValue} onChange={handleSetValue} wheel="normal"  height={220} className="picker-scroll">
         <Picker.Column key={name} name='thumbId'>
           {imgList.map(option => (
             <Picker.Item key={option.id} value={option.id}>
              {({ selected }) => (
             /* Use the `selected` state ti conditionally style the selected item */
             <div style={{ color: selected ? 'red' : 'black' }}>
-              <p style={{fontSize:'36px'}}>{option.title}</p>
+              <p style={{fontSize:'24px'}}>{option.title}</p>
             </div>
           )}
             
