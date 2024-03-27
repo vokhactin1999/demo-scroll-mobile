@@ -13,10 +13,15 @@ const Thumbview = ({pickerValue}) => {
         return <img style={{width:'100%',height:'100%',objectFit:'cover'}} src={src} alt="" />
     }
     return (
-        <div style={{height:'300px',width:'100%'}}>
+        <div style={{height:'700px',width:'100%', display:'flex',alignItems:'center',justifyContent:'center'}}>
+            <div style={{width:'60%',height:'100%'}}>
             {renderImageTag()}
+            </div>
+     
         </div>
     );
 };
 
 export default Thumbview;
+
+// linear-gradient(to top, transparent, transparent 5%, white 40%, white 40%, transparent 95%, transparent)

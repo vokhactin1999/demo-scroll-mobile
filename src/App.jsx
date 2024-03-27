@@ -12,10 +12,10 @@ function App() {
     setPickerValue(value)
   }
   return (
-    <>
+    <div style={{paddingBottom:'100px'}}>
     <Thumbview pickerValue={pickerValue}/>
     <ThumbViewScroll pickerValue={pickerValue} handleSetValue={handleSetValue}/>
-    </>
+    </div>
   )
 }
 

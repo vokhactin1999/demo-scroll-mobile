@@ -1,0 +1,3 @@
+.picker-scroll{
+    mask-image: linear-gradient(to top, transparent, transparent 5%, white 40%, white 40%, transparent 95%, transparent) !important;
+}
