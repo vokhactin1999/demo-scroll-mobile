@@ -1,20 +1,12 @@
 import { useState } from 'react'
-
-
-import ThumbViewScroll from './component/ThumbViewScroll'
-import Thumbview from './component/Thumbview'
+import './App.css'
+import GagoPage from './component/GagoPage'
 
 function App() {
-  const [pickerValue, setPickerValue] = useState({thumbId:1})
 
-  const handleSetValue = (value,key) => {
-    console.log({value,key})
-    setPickerValue(value)
-  }
   return (
-    <div style={{paddingBottom:'10px'}}>
-    <Thumbview pickerValue={pickerValue}/>
-    <ThumbViewScroll pickerValue={pickerValue} handleSetValue={handleSetValue}/>
+    <div className='body'>
+      <GagoPage />
     </div>
   )
 }
