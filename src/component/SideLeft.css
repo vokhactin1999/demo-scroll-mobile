@@ -1,0 +1,174 @@
+.side.gauche.en-savoir-plus {
+	background-color: var(--sombre);
+	justify-content: flex-end;
+	align-items: center;
+	display: flex;
+}
+.side.gauche {
+	width: 50vw;
+	height: 100vh;
+	align-items: flex-start;
+	display: flex;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	/* background-image: url("01 UNDERME.png"); */
+}
+.side.gauche.en-savoir-plus {
+	height: 55vh;
+	flex-direction: row;
+	justify-content: center;
+	display: none;
+}
+
+.bloc-temoin {
+	height: 80vh;
+	grid-column-gap: 16px;
+	grid-row-gap: 16px;
+	grid-template-rows: auto auto;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-columns: 1fr;
+	align-items: center;
+	display: flex;
+	overflow: hidden;
+}
+
+.bloc-temoin.item-1 {
+	align-items: center;
+	padding-bottom: 0%;
+	padding-left: 0%;
+}
+
+.bloc-temoin.master,
+.bloc-temoin.formation-pro,
+.bloc-temoin.identite-valeurs {
+	display: flex;
+}
+
+.bloc-temoin.prerequis {
+	flex-direction: row;
+	display: flex;
+}
+
+.bloc-temoin.bac3,
+.bloc-temoin.bac {
+	display: flex;
+}
+
+.bloc-temoin.master,
+.bloc-temoin.formation-pro,
+.bloc-temoin.identite-valeurs,
+.bloc-temoin.prerequis,
+.bloc-temoin.bac3,
+.bloc-temoin.bac,
+.bloc-temoin.quels-metiers {
+	height: 76vh;
+}
+
+.bloc-temoin.master,
+.bloc-temoin.formation-pro,
+.bloc-temoin.identite-valeurs,
+.bloc-temoin.prerequis,
+.bloc-temoin.bac3,
+.bloc-temoin.bac,
+.bloc-temoin.quels-metiers {
+	height: 76svh;
+}
+
+.bloc-text {
+	z-index: 999;
+	position: fixed;
+	bottom: 0%;
+	left: 3vw;
+	transition: 0.3 ease;
+}
+.bloc-text .row {
+	width: 44vw;
+	margin: 0;
+}
+.bloc-text.alt-square {
+	bottom: 11%;
+}
+
+.bloc-text {
+	opacity: 1;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	margin-right: 0;
+	z-index: 999;
+	position: fixed;
+	bottom: 0%;
+	left: 3vw;
+}
+
+.bloc-text.alt-square {
+	flex-direction: column;
+}
+
+.wrapper-btn-view-more {
+	padding: 20px 0px;
+	text-align: right;
+}
+.btn-view-more {
+	font-size: 13px;
+	width: 125px;
+	height: 31px;
+	border-radius: 40px;
+	text-align: center;
+	display: inline-block;
+	border: none;
+}
+a button.link-view-more:hover {
+	transition: 0.3 ease;
+	color: floralwhite !important;
+	background-color: #333;
+	text-decoration: none !important;
+	cursor: pointer;
+}
+a button.link-view-more:hover svg path {
+	stroke: floralwhite !important;
+}
+a button.link-view-more svg path {
+	transition: all 0.5s ease-in-out;
+}
+a button.link-view-more:hover {
+	background-color: #161616 !important;
+	stroke: floralwhite !important;
+	transition: 0.5 ease;
+}
+
+.temoin {
+	z-index: 2;
+	width: 31.9vw;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	display: block;
+	position: absolute;
+	top: 10%;
+	bottom: auto;
+	left: auto;
+	right: 51%;
+}
+
+.texte-temoin {
+	text-align: justify;
+	margin-bottom: 2%;
+	font-family: Inter;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 1.4;
+	display: block;
+}
+.titre-temoin.black {
+	font-size: 30px;
+	font-family: brl;
+	font-weight: 700;
+}
+.viewMore {
+	position: absolute;
+	padding: 0 !important;
+}

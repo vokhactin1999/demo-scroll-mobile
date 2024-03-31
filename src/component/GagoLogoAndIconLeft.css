@@ -1,0 +1,32 @@
+.logo-link,
+.logo-link.w--current {
+	z-index: 999;
+	position: fixed;
+	top: 3vw;
+	left: 3vw;
+}
+.w-inline-block {
+	max-width: 100%;
+	display: inline-block;
+}
+.logo-embed {
+	width: 22vw;
+	color: #141414;
+}
+
+.logo-member {
+	margin-bottom: 22px;
+}
+.member-content {
+	width: 33px;
+	height: 33px;
+}
+.member-content img {
+	width: 100%;
+}
+#logo {
+	width: 75px;
+	height: 95px;
+	background-repeat: no-repeat;
+	background-size: auto;
+}

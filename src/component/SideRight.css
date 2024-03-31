@@ -1,0 +1,17 @@
+.side.droite {
+	transition: 0.3s ease !important;
+	flex-direction: row;
+	order: 1;
+	justify-content: flex-start;
+	align-self: center;
+	align-items: center;
+	display: flex;
+	background-color: yellow;
+}
+
+.side.droite.en-savoir-plus {
+	background-color: var(--vert-bo);
+	flex-direction: column;
+	justify-content: space-around;
+	overflow: scroll;
+}
