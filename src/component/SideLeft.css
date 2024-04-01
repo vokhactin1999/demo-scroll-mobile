@@ -229,6 +229,7 @@ a button.link-view-more:hover {
 		position: absolute;
 		left: auto;
 		margin-right: 0;
+		bottom: -2px;
 	}
 	.bloc-text .row {
 		width: 100vw;

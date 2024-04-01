@@ -8,6 +8,7 @@
 
 body {
 	overflow: overlay !important;
+	overflow-y: hidden !important;
 }
 
 ::-webkit-scrollbar {

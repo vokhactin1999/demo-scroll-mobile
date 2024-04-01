@@ -56,7 +56,13 @@ function SideLeft(props) {
 				<div id='temoinContainer'>
 					<div className='temoin'>
 						<div className='bloc-temoin bac3'>
-							<div className='bloc-text'>
+							<div
+								className='bloc-text'
+								style={{
+									background: isPc
+										? null
+										: `${selectedElement.gradientMobile}`,
+								}}>
 								<div className='wrapper-btn-view-more'>
 									<div className='row'>
 										<div
