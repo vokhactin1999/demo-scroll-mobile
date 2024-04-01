@@ -172,3 +172,90 @@ a button.link-view-more:hover {
 	position: absolute;
 	padding: 0 !important;
 }
+
+.social-mobile-1 {
+	position: absolute;
+	top: 18px;
+	right: 24px;
+	display: flex;
+	gap: 8px;
+	z-index: 999;
+}
+.social-mobile-2 {
+	position: absolute;
+	top: 58px;
+	right: 24px;
+	display: flex;
+	gap: 8px;
+	z-index: 999;
+}
+.social-mobile-1 a,
+.social-mobile-2 a {
+	display: none;
+	width: 34px;
+	height: 34px;
+	border-radius: 100%;
+
+	background-size: cover;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 479px) {
+	.side.gauche {
+		width: 100vw;
+		height: 76svh;
+		align-items: flex-start;
+		display: flex;
+	}
+	.texte-temoin {
+		text-align: justify;
+		width: 100%;
+		color: var(--blanc);
+		padding-left: 5vw;
+		padding-right: 5vw;
+		font-size: 16px;
+		line-height: 1.4;
+		display: block;
+	}
+	.bloc-text {
+		opacity: 1;
+		text-align: center;
+		color: #fff;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		position: absolute;
+		left: auto;
+		margin-right: 0;
+	}
+	.bloc-text .row {
+		width: 100vw;
+		margin: 0;
+		position: static;
+	}
+	.temoin {
+		width: 100%;
+		justify-content: flex-end;
+		margin-top: 0;
+		position: absolute;
+		top: 0;
+		bottom: auto;
+		left: 0%;
+		right: auto;
+	}
+
+	.social-mobile-2 a,
+	.social-mobile-1 a {
+		display: flex;
+	}
+	.w-hidden-main,
+	.w-hidden-medium,
+	.w-hidden-small {
+		display: inherit !important;
+	}
+	.text-temoin {
+		color: #ffffff !important;
+	}
+}

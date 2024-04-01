@@ -5,9 +5,11 @@ import EnFlat from "./EnFlat";
 import "./SelectLanguage.css";
 
 import { useGetElementById, useClickSelection } from "../hook";
+import { useTranslation } from "react-i18next";
 
 function SelectLanguage(props) {
 	const selectedElement = useGetElementById();
+	const { t, i18n } = useTranslation();
 
 	const {
 		toggleSelectLanguage,
@@ -18,7 +20,15 @@ function SelectLanguage(props) {
 		selectChina,
 	} = useClickSelection();
 
-	console.log(toggleSelectLanguage);
+	const changeLanguage = (lng) => {
+		if (lng === "en") selectEn();
+
+		if (lng === "vi") selectVietNamese();
+
+		if (lng === "zh") selectChina();
+
+		i18n.changeLanguage(lng);
+	};
 
 	const renderTextSelectedLanguage = () => {
 		const languageCode = {
@@ -26,12 +36,12 @@ function SelectLanguage(props) {
 				title: "English",
 				icon: <EnFlat />,
 			},
-			vn: {
-				title: "Vietnameese",
+			vi: {
+				title: "Tiếng Việt",
 				icon: <VnFlat />,
 			},
-			cn: {
-				title: "Chinese",
+			zh: {
+				title: "中国人",
 				icon: <CnFlat />,
 			},
 		};
@@ -53,17 +63,17 @@ function SelectLanguage(props) {
 						className='option d-flex align-items-center'
 						id='engLanguage'
 						value='english'
-						onClick={selectEn}>
+						onClick={() => changeLanguage("en")}>
 						<EnFlat />
 						<label htmlFor='currentchannel' className='m-0'>
-							English
+							{t("en lng")}
 						</label>
 					</div>
 					<div
 						className='option d-flex align-items-center'
 						id='viLanguage'
 						value='vietnamese'
-						onClick={selectVietNamese}>
+						onClick={() => changeLanguage("vi")}>
 						<input
 							type='radio'
 							className='radio'
@@ -76,7 +86,7 @@ function SelectLanguage(props) {
 						</span>
 						<span>
 							<label htmlFor='customChannel' className='m-0'>
-								Vietnamese
+								{t("vi lng")}
 							</label>
 						</span>
 					</div>
@@ -84,10 +94,10 @@ function SelectLanguage(props) {
 						className='option d-flex align-items-center'
 						id='cnLanguage'
 						value='chinese'
-						onClick={selectChina}>
+						onClick={() => changeLanguage("zh")}>
 						<CnFlat />
 						<label htmlFor='dm' className='m-0'>
-							Chinese
+							{t("zh lng")}
 						</label>
 					</div>
 				</div>

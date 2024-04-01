@@ -13,7 +13,7 @@ function GagoLogoAndIconLeft(props) {
 						<div className='col-3 p-0'>
 							<img id='logo' src='Logo.png' alt='' />
 						</div>
-						<div className='col-9 ' style={{ paddingLeft: 20 }}>
+						<div className='col-9 '>
 							<div className='row align-items-start pb-1'>
 								<div className='col-2'>
 									<div className='rounded'>

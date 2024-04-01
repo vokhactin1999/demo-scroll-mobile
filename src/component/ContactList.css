@@ -1,43 +1,23 @@
-.contact-social-list{
-    position: fixed;
-    right: 57px;
-    bottom: 107px;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    justify-content: center;
-    align-items: center;
-    display: none;
-    z-index: 100;
-  }
+.contact-social-list {
+	position: fixed;
 
-  .contact-social-list div {
-    border-radius: 100%;
-  }
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	justify-content: center;
+	align-items: center;
+	bottom: 3% !important;
+	right: 24px !important;
+	z-index: 100;
+}
 
-  .image-icon{
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    margin-bottom: 15px;
-  }
+.contact-social-list div {
+	border-radius: 100%;
+}
 
-  .contact-message{
-    position: fixed;
-    width: 64px;
-    height: 64px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    right: 40px;
-    bottom: 32px;
-    cursor: pointer;
-    z-index: 100
-    ;
-  }
-
-  .contact-message {
-    bottom: 3%!important;
-    right: 24px!important;
-  }
+.image-icon {
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	margin-bottom: 15px;
+}

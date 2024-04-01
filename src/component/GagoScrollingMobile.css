@@ -1,0 +1,32 @@
+.picker-scroll {
+	mask-image: linear-gradient(
+		to top,
+		transparent,
+		transparent 5%,
+		white 40%,
+		white 40%,
+		transparent 95%,
+		transparent
+	) !important;
+}
+.heading-2 {
+	color: #fff;
+	text-align: left;
+	margin-top: 1vh;
+	margin-bottom: 0;
+	font-family: Montserrat, sans-serif;
+	font-size: 50%;
+	line-height: 75%;
+	text-decoration: none;
+}
+
+.scrollingdiv-mobile {
+	margin-left: 2.5vw;
+	overflow: auto;
+}
+.scrollingdiv-mobile div:last-child {
+	width: unset !important;
+}
+.scrollingdiv-mobile div > div {
+	justify-content: left !important;
+}

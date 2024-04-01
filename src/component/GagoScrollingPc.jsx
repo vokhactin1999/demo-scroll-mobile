@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
-import "./ScrollGagoList.css";
+import "./GagoScrollingPc.css";
 import { throttle } from "lodash";
 import { ScrollInfoContext } from "../ScrollInfoContext";
-function ScrollGagoList(props) {
+function GagoScrollingPc(props) {
 	const { setSelectedId } = useContext(ScrollInfoContext);
 	const containerRef = useRef(null);
 	let container = containerRef.current;
@@ -25,7 +25,7 @@ function ScrollGagoList(props) {
 		}
 
 		let items = Array.from(container.children);
-		console.log(items);
+
 		if (items.length === 0) {
 			console.error(
 				'Không tìm thấy phần tử con nào trong "scrollingDiv".',
@@ -33,7 +33,6 @@ function ScrollGagoList(props) {
 			return;
 		}
 		const itemHeight = items[0].offsetHeight;
-		console.log(itemHeight);
 
 		// var windowWidth = $(window).width();
 
@@ -87,7 +86,7 @@ function ScrollGagoList(props) {
 			const newCenterItemId = closestItem
 				? closestItem.getAttribute("data-temoin")
 				: 1;
-			setSelectedId(newCenterItemId);
+			setSelectedId({ gagoId: newCenterItemId });
 
 			if (newCenterItemId !== currentCenterItemId) {
 				currentCenterItemId = newCenterItemId;
@@ -109,7 +108,7 @@ function ScrollGagoList(props) {
 			if (scrollTop < itemHeight * 2.5 + 30) {
 				const lastItem =
 					container.children[container.children.length - 1];
-				console.log(lastItem);
+
 				container.insertBefore(lastItem, container.firstChild);
 
 				// Tính toán lại giá trị scrollTop để đảm bảo cuộn lên không bị đứng
@@ -157,7 +156,7 @@ function ScrollGagoList(props) {
 			e.preventDefault();
 			let linesToScroll =
 				e.deltaY >= 0 ? 33.33333129882813 : -33.33333129882813;
-			console.log(linesToScroll, "linesToScroll");
+
 			//   } else {
 			//     linesToScroll = e.deltaY;
 			//   }
@@ -260,4 +259,4 @@ function ScrollGagoList(props) {
 	);
 }
 
-export default ScrollGagoList;
+export default GagoScrollingPc;

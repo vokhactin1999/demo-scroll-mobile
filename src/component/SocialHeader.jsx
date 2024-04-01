@@ -8,11 +8,12 @@ import {
 } from "reactstrap";
 import "./SocialHeader.css";
 import { useGetElementById } from "../hook";
+import { useTranslation } from "react-i18next";
 function SocialHeader(props) {
 	const [dropdownOpen, setDropdownOpen] = useState(false);
 	const selectedElement = useGetElementById();
 	const toggle = () => setDropdownOpen((prevState) => !prevState);
-
+	const { t } = useTranslation();
 	return (
 		<div className='html-embed-2 w-embed w-script'>
 			<div className='header'>
@@ -22,7 +23,7 @@ function SocialHeader(props) {
 							<Dropdown
 								isOpen={dropdownOpen}
 								toggle={toggle}
-								size='xs'>
+								size='xs' className="gago__dropdown">
 								<DropdownToggle
 									className='rounded-pill white'
 									style={{
@@ -30,7 +31,7 @@ function SocialHeader(props) {
 										border: "none",
 									}}
 									caret>
-									Download Proposal
+									{t("download proposal")}
 								</DropdownToggle>
 								<DropdownMenu>
 									<DropdownItem>
@@ -38,7 +39,7 @@ function SocialHeader(props) {
 											className='dropdown-item download-proposal-vietnamese'
 											target='_blank'
 											href='https://docs.google.com/presentation/d/e/2PACX-1vQR6p7y1MC2m-rZGfbb_m1ejnyKmpET-WFStW4r9DSFxOmlwBtDEMrGHNS1-bLXFA/pub?start=false&loop=false&delayms=3000'>
-											Vietnamese version
+											{t("en version")}
 										</a>
 									</DropdownItem>
 									<DropdownItem>
@@ -46,7 +47,7 @@ function SocialHeader(props) {
 											className='dropdown-item download-proposal-english'
 											target='_blank'
 											href='https://docs.google.com/presentation/d/e/2PACX-1vRuvcis7uEg4gpG_llsVir2Koo-7DufYtOsVLfYlHXOWAX3RwG3aKE6Vqxun_O3uw/pub?start=false&loop=false&delayms=3000'>
-											English version
+											{t("vn version")}
 										</a>
 									</DropdownItem>
 								</DropdownMenu>

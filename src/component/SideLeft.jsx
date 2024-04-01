@@ -1,13 +1,57 @@
 import React from "react";
 import "./SideLeft.css";
-import { useGetElementById } from "../hook";
+import useWindowSize, {
+	useGetContentByTemoinId,
+	useGetCurrentLanguage,
+	useGetElementById,
+} from "../hook";
+import { useTranslation } from "react-i18next";
 
 function SideLeft(props) {
 	const selectedElement = useGetElementById();
+	const contentTemoin = useGetContentByTemoinId();
+	const currentLanguage = useGetCurrentLanguage();
+	const { t } = useTranslation();
+
+	const windowSize = useWindowSize();
+	const isPc = windowSize.width > 1200;
+
 	return (
 		<div
 			className='side gauche'
 			style={{ backgroundImage: `url('${selectedElement.image}')` }}>
+			<div className='social-mobile-1'>
+				<a
+					href='https://www.behance.net/gagostudios'
+					target='_blank'
+					className='header-link'
+					style={{ background: `${selectedElement.itemColor}` }}>
+					<img src='behance.svg' />
+				</a>
+				<a
+					href='https://www.instagram.com/gago.studios/'
+					target='_blank'
+					className='header-link'
+					style={{ background: `${selectedElement.itemColor}` }}>
+					<img src='instagram.svg' />
+				</a>
+			</div>
+			<div className='social-mobile-2'>
+				<a
+					href=' https://www.facebook.com/gagostudios'
+					target='_blank'
+					className='header-link'
+					style={{ background: `${selectedElement.itemColor}` }}>
+					<img src='Facebook.svg' />
+				</a>
+				<a
+					href='https://www.linkedin.com/company/gago-studios'
+					target='_blank'
+					className='header-link'
+					style={{ background: `${selectedElement.itemColor}` }}>
+					<img src='Linkedin.svg' />
+				</a>
+			</div>
 			<div className='w-layout-vflex flex-block-6'>
 				<div id='temoinContainer'>
 					<div className='temoin'>
@@ -21,7 +65,9 @@ function SideLeft(props) {
 											<h3
 												className='titre-temoin black'
 												style={{
-													color: `${selectedElement.mainColor}`,
+													color: isPc
+														? `${selectedElement.mainColor}`
+														: "#ffffff",
 												}}>
 												{selectedElement?.title}
 											</h3>
@@ -29,9 +75,15 @@ function SideLeft(props) {
 												id='undermeContent'
 												className='texte-temoin'
 												style={{
-													color: `${selectedElement.itemColor}`,
+													color: isPc
+														? `${selectedElement.itemColor}`
+														: "#ffffff",
 												}}>
-												{selectedElement?.content}
+												{
+													contentTemoin?.[
+														currentLanguage
+													]
+												}
 											</div>
 										</div>
 										<div
@@ -74,7 +126,7 @@ function SideLeft(props) {
 														/>
 													</svg>{" "}
 													<span className='view-more-content'>
-														View more
+														{t("view more")}
 													</span>
 												</button>
 											</a>
