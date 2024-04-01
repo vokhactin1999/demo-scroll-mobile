@@ -17,7 +17,7 @@ function GagoScrollingMobile() {
 				value={selectedId}
 				onChange={getSelectedElementId}
 				wheel='normal'
-				height={160}
+				height={200}
 				itemHeight={36}
 				className='picker-scroll'>
 				<Picker.Column key={name} name='gagoId'>
