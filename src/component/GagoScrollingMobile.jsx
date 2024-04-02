@@ -18,7 +18,7 @@ function GagoScrollingMobile() {
 				onChange={getSelectedElementId}
 				wheel='normal'
 				height={200}
-				itemHeight={44}
+				itemHeight={40}
 				className='picker-scroll'>
 				<Picker.Column key={name} name='gagoId'>
 					{data_temoin.map((option) => (
@@ -33,6 +33,7 @@ function GagoScrollingMobile() {
 									<p
 										style={{
 											fontSize: "18px",
+											fontFamily: "brl",
 										}}>
 										{option.title}
 									</p>

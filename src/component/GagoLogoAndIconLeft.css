@@ -41,8 +41,8 @@
 }
 @media screen and (max-width: 479px) {
 	.contact-social-list {
-		right: 38px !important;
-		bottom: 100px !important;
+		right: 20px !important;
+		bottom: 20px !important;
 		gap: 0px !important;
 	}
 	.dropdown-item:hover {
@@ -130,5 +130,19 @@
 
 	.w-col-tiny-12 {
 		width: 100%;
+	}
+
+	.member-content {
+		width: 27px;
+		height: 27px;
+	}
+	.gago__logo-list {
+		padding-left: 4px;
+	}
+	.social-mobile-1 {
+		top: 10px !important;
+	}
+	.social-mobile-2 {
+		top: 52px !important;
 	}
 }

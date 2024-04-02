@@ -14,7 +14,7 @@
 	text-align: left;
 	margin-top: 1vh;
 	margin-bottom: 0;
-	font-family: Montserrat, sans-serif;
+	font-family: Inter !important;
 	font-size: 50%;
 	line-height: 75%;
 	text-decoration: none;
@@ -29,4 +29,82 @@
 }
 .scrollingdiv-mobile div > div {
 	justify-content: left !important;
+}
+.scroll-list-wrapper {
+	/* Thiết lập chiều cao cố định cho container để kích hoạt scroll */
+	height: 300px; /* Hoặc chiều cao bạn mong muốn */
+	overflow-y: auto; /* Cho phép scroll theo chiều dọc */
+}
+
+/* Đảm bảo picker-scroll phù hợp với container của nó */
+.picker-scroll {
+	height: 100%;
+	overflow: hidden; /* Ẩn thanh scroll không cần thiết của picker nếu có */
+}
+/* Áp dụng cho tất cả các mục trong picker */
+.picker-scroll .picker-column .picker-item {
+	transition: transform 0.3s ease, color 0.3s ease; /* Làm mượt hiệu ứng chuyển đổi màu sắc và vị trí */
+}
+
+/* Hiệu ứng khi scroll */
+.scroll-list-wrapper {
+	overflow-y: scroll;
+	scrollbar-width: thin; /* Hiệu ứng thanh cuộn mỏng cho Firefox */
+	scrollbar-color: #888 #f0f0f0; /* Màu thanh cuộn cho Firefox */
+}
+
+/* Hiệu ứng thanh cuộn cho Chrome, Edge, và Safari */
+.scroll-list-wrapper::-webkit-scrollbar {
+	width: 8px; /* Độ rộng của thanh cuộn */
+}
+
+.scroll-list-wrapper::-webkit-scrollbar-track {
+	background: #f0f0f0; /* Màu nền của track */
+}
+
+.scroll-list-wrapper::-webkit-scrollbar-thumb {
+	background: #888; /* Màu của thumb */
+}
+
+.scroll-list-wrapper::-webkit-scrollbar-thumb:hover {
+	background: #555; /* Màu khi hover */
+}
+/* thumbviewscroll.css */
+.scroll-list-wrapper {
+	-webkit-overflow-scrolling: touch; /* Tối ưu hóa cuộn trên iOS */
+	overflow-y: scroll; /* Cho phép cuộn dọc */
+	scrollbar-width: thin; /* Thanh cuộn mỏng cho các trình duyệt hỗ trợ */
+	scrollbar-color: #888 #f0f0f0; /* Màu sắc cho thanh cuộn */
+}
+
+.scroll-list-wrapper::-webkit-scrollbar {
+	width: 8px; /* Điều chỉnh độ rộng của thanh cuộn */
+}
+
+.scroll-list-wrapper::-webkit-scrollbar-track {
+	background: #f0f0f0; /* Màu nền của track */
+}
+
+.scroll-list-wrapper::-webkit-scrollbar-thumb {
+	background: #888; /* Màu của thumb */
+	border-radius: 4px;
+}
+
+.scroll-list-wrapper::-webkit-scrollbar-thumb:hover {
+	background: #555; /* Màu của thumb khi hover */
+}
+
+.picker-scroll .picker-column .picker-item {
+	transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition cho việc thay đổi */
+}
+
+.picker-scroll .picker-column .picker-item[aria-selected="true"] {
+	color: red; /* Nổi bật mục được chọn */
+	transform: scale(1.05); /* Phóng to nhẹ mục được chọn */
+}
+
+@media screen and (max-width: 479px) {
+	.scrollingdiv-mobile {
+		margin-left: 26vw;
+	}
 }

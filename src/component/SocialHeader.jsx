@@ -38,7 +38,7 @@ function SocialHeader(props) {
 										<a
 											className='dropdown-item download-proposal-vietnamese'
 											target='_blank'
-											href='https://docs.google.com/presentation/d/e/2PACX-1vQR6p7y1MC2m-rZGfbb_m1ejnyKmpET-WFStW4r9DSFxOmlwBtDEMrGHNS1-bLXFA/pub?start=false&loop=false&delayms=3000'>
+											href='https://docs.google.com/presentation/d/e/2PACX-1vS_KSmBUey_jTUqgbdIux_iE3GcmPR4jYamr4581xfaoNH8_4Wv1_OPUiBUt6iI6h1klVgz5-65rJOq/pub?start=false&loop=false&delayms=3000'>
 											{t("en version")}
 										</a>
 									</DropdownItem>
@@ -46,7 +46,7 @@ function SocialHeader(props) {
 										<a
 											className='dropdown-item download-proposal-english'
 											target='_blank'
-											href='https://docs.google.com/presentation/d/e/2PACX-1vRuvcis7uEg4gpG_llsVir2Koo-7DufYtOsVLfYlHXOWAX3RwG3aKE6Vqxun_O3uw/pub?start=false&loop=false&delayms=3000'>
+											href='https://docs.google.com/presentation/d/e/2PACX-1vQGnFrDfUNCodXyiCb2y3V0YRyRFMnG14IR3M0MaFkYz3VsHiUcwsgDlVaKh2YmGQef-sGQHWiNNtZW/pub?start=false&loop=false&delayms=3000'>
 											{t("vn version")}
 										</a>
 									</DropdownItem>

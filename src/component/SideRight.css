@@ -15,7 +15,15 @@
 	justify-content: space-around;
 	overflow: scroll;
 }
-
+.dropdown-item {
+	font-size: 14px;
+    font-family: brl;
+    font-weight: 800 !important;
+	color: #1c2028;
+}
+.dropdown-menu.show{
+	transform: translate(-8px, 36px)!important;
+}
 @media screen and (max-width: 479px) {
 	.side.droite {
 		width: 100vw;

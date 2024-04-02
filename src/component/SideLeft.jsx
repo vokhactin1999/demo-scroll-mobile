@@ -14,7 +14,7 @@ function SideLeft(props) {
 	const { t } = useTranslation();
 
 	const windowSize = useWindowSize();
-	const isPc = windowSize.width > 1200;
+	const isTabLet = windowSize.width > 767;
 
 	return (
 		<div
@@ -59,7 +59,7 @@ function SideLeft(props) {
 							<div
 								className='bloc-text'
 								style={{
-									background: isPc
+									background: isTabLet
 										? null
 										: `${selectedElement.gradientMobile}`,
 								}}>
@@ -68,20 +68,70 @@ function SideLeft(props) {
 										<div
 											className='col-12 w-col-tiny-8 p-0'
 											style={{ textAlign: "left" }}>
-											<h3
-												className='titre-temoin black'
-												style={{
-													color: isPc
-														? `${selectedElement.mainColor}`
-														: "#ffffff",
-												}}>
-												{selectedElement?.title}
-											</h3>
+											<div className="gago__title-and-view-more">
+												<h3
+													className='titre-temoin black'
+													style={{
+														color: isTabLet
+															? `${selectedElement.mainColor}`
+															: "#ffffff",
+													}}>
+													{selectedElement?.title}
+												</h3>
+												<div
+													className='viewMore'
+													style={{
+														textAlign: "right",
+													}}>
+													<a
+														target='_blank'
+														href='https://www.behance.net/gallery/184295181/Mascot-Design-UNDERME'>
+														<button
+															className='btn-view-more link-view-more'
+															style={{
+																backgroundColor: `${selectedElement.mainColor}`,
+																color: "#ffff",
+															}}>
+															<svg
+																width={24}
+																height={24}
+																viewBox='0 0 24 24'
+																fill='none'
+																xmlns='http://www.w3.org/2000/svg'>
+																<path
+																	d='M14.43 5.92993L20.5 11.9999L14.43 18.0699'
+																	stroke='#ffff'
+																	strokeWidth='1.5'
+																	strokeMiterlimit={
+																		10
+																	}
+																	strokeLinecap='round'
+																	strokeLinejoin='round'
+																/>
+																<path
+																	d='M3.5 12H20.33'
+																	stroke='#ffff'
+																	strokeWidth='1.5'
+																	strokeMiterlimit={
+																		10
+																	}
+																	strokeLinecap='round'
+																	strokeLinejoin='round'
+																/>
+															</svg>{" "}
+															<span className='view-more-content'>
+																{t("view more")}
+															</span>
+														</button>
+													</a>
+												</div>
+											</div>
+
 											<div
 												id='undermeContent'
 												className='texte-temoin'
 												style={{
-													color: isPc
+													color: isTabLet
 														? `${selectedElement.itemColor}`
 														: "#ffffff",
 												}}>
@@ -91,51 +141,6 @@ function SideLeft(props) {
 													]
 												}
 											</div>
-										</div>
-										<div
-											className='viewMore'
-											style={{ textAlign: "right" }}>
-											<a
-												target='_blank'
-												href='https://www.behance.net/gallery/184295181/Mascot-Design-UNDERME'>
-												<button
-													className='btn-view-more link-view-more'
-													style={{
-														backgroundColor: `${selectedElement.mainColor}`,
-														color: "#ffff",
-													}}>
-													<svg
-														width={24}
-														height={24}
-														viewBox='0 0 24 24'
-														fill='none'
-														xmlns='http://www.w3.org/2000/svg'>
-														<path
-															d='M14.43 5.92993L20.5 11.9999L14.43 18.0699'
-															stroke='#ffff'
-															strokeWidth='1.5'
-															strokeMiterlimit={
-																10
-															}
-															strokeLinecap='round'
-															strokeLinejoin='round'
-														/>
-														<path
-															d='M3.5 12H20.33'
-															stroke='#ffff'
-															strokeWidth='1.5'
-															strokeMiterlimit={
-																10
-															}
-															strokeLinecap='round'
-															strokeLinejoin='round'
-														/>
-													</svg>{" "}
-													<span className='view-more-content'>
-														{t("view more")}
-													</span>
-												</button>
-											</a>
 										</div>
 									</div>
 								</div>

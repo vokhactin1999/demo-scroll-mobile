@@ -167,12 +167,14 @@ a button.link-view-more:hover {
 	font-size: 30px;
 	font-family: brl;
 	font-weight: 700;
+	padding-bottom: 16px;
 }
 .viewMore {
-	position: absolute;
 	padding: 0 !important;
 }
-
+.view-more-content {
+	text-align: center;
+}
 .social-mobile-1 {
 	position: absolute;
 	top: 18px;
@@ -200,7 +202,16 @@ a button.link-view-more:hover {
 	justify-content: center;
 	align-items: center;
 }
+.gago__title-and-view-more {
+	display: flex;
+	justify-content: space-between;
+}
 
+@media screen and (max-width: 766px) {
+	.header {
+		padding-right: 10px;
+	}
+}
 @media screen and (max-width: 479px) {
 	.side.gauche {
 		width: 100vw;
@@ -258,5 +269,8 @@ a button.link-view-more:hover {
 	}
 	.text-temoin {
 		color: #ffffff !important;
+	}
+	.btn-view-more {
+		margin-right: 5vw;
 	}
 }

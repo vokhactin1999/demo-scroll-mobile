@@ -168,6 +168,13 @@ a {
 	display: flex;
 }
 
+@font-face {
+	font-family: brl;
+	src: url("font/brlnsdb.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
 @media screen and (max-width: 479px) {
 	.flex-block {
 		flex-wrap: wrap;
