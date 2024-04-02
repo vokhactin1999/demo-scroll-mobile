@@ -130,6 +130,7 @@ section {
 body {
 	line-height: 1;
 	/* background: red; */
+	-webkit-overflow-scrolling: touch;
 }
 ol,
 ul {
