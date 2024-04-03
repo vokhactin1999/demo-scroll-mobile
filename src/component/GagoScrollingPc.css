@@ -22,7 +22,7 @@
 	text-align: left;
 	margin-top: 1vh;
 	margin-bottom: 0;
-	font-family: brl;
+	font-family: "Berlin Sans FB", sans-serif !important;
 	font-size: 50%;
 	line-height: 75%;
 	text-decoration: none;
@@ -32,7 +32,7 @@
 	color: #fff;
 	text-decoration: none;
 	display: inline;
-	font-family: brl;
+	font-family: "Berlin Sans FB", sans-serif;
 	font-weight: bold;
 }
 
@@ -58,7 +58,7 @@
 }
 
 .scrollingdiv {
-	width: 50%;
+	width: 51%;
 	height: 139.04px;
 	margin-left: 2.5vw;
 	overflow: auto;

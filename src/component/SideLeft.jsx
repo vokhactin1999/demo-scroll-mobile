@@ -1,11 +1,14 @@
 import React from "react";
-import "./SideLeft.css";
-import useWindowSize, {
+
+import {
 	useGetContentByTemoinId,
 	useGetCurrentLanguage,
 	useGetElementById,
+	useWindowSize,
 } from "../hook";
 import { useTranslation } from "react-i18next";
+
+import "./SideLeft.css";
 
 function SideLeft(props) {
 	const selectedElement = useGetElementById();
@@ -68,7 +71,7 @@ function SideLeft(props) {
 										<div
 											className='col-12 w-col-tiny-8 p-0'
 											style={{ textAlign: "left" }}>
-											<div className="gago__title-and-view-more">
+											<div className='gago__title-and-view-more'>
 												<h3
 													className='titre-temoin black'
 													style={{
@@ -85,7 +88,9 @@ function SideLeft(props) {
 													}}>
 													<a
 														target='_blank'
-														href='https://www.behance.net/gallery/184295181/Mascot-Design-UNDERME'>
+														href={
+															selectedElement?.link
+														}>
 														<button
 															className='btn-view-more link-view-more'
 															style={{

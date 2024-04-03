@@ -2,8 +2,9 @@ import React from "react";
 import GagoScrollingPc from "./GagoScrollingPc";
 import GagoScrollingMobile from "./GagoScrollingMobile";
 import SocialHeader from "./SocialHeader";
+import { useGetElementById, useWindowSize } from "../hook";
+
 import "./SideRight.css";
-import useWindowSize, { useGetElementById } from "../hook";
 function SideRight(props) {
 	const selectedElement = useGetElementById();
 	const windowSize = useWindowSize();

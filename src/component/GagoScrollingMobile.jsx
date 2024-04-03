@@ -33,7 +33,8 @@ function GagoScrollingMobile() {
 									<p
 										style={{
 											fontSize: "18px",
-											fontFamily: "brl",
+											fontFamily: "Berlin Sans FB",
+											fontWeight:"bold"
 										}}>
 										{option.title}
 									</p>

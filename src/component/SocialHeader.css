@@ -12,12 +12,12 @@
 
 .header {
 	padding-top: 24px;
-	padding-right: 20px;
+	padding-right: 14px;
 }
 
 .download-proposal,
 .dropdown-item {
-	font-family: Inter;
+	font-family: "Inter", sans-serif;
 	font-size: 14px;
 	font-weight: 500;
 }
@@ -36,9 +36,14 @@
 	align-items: center;
 }
 @media screen and (max-width: 479px) {
-	.gago__dropdown {
+	.html-embed-2 {
 		position: fixed;
-		bottom: 20px;
-		left: 20px;
+		top: unset;
+		bottom: 24px;
+		left: 0;
+		right: auto;
+	}
+	.toggle-mobile {
+		font-size: 14px !important;
 	}
 }

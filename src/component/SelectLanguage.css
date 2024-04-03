@@ -111,14 +111,18 @@
 	padding-left: 16px;
 	padding-right: 16px;
 	font-size: 14px;
-	font-family: brl;
+	font-family: 'Inter', sans-serif;
 	font-weight: 800 !important;
 }
 
 .select-box .option {
 	padding: 10px;
 	font-size: 14px;
-	font-family: brl;
-	font-weight: 500 !important;
+	font-family: 'Berlin Sans FB', sans-serif;
+	font-weight: 800 !important;
 	width: 160px;
+}
+#languageSelect{
+	font-size: 14px;
+	font-weight: 800 !important;
 }

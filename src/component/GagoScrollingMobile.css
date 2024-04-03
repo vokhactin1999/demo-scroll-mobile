@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/berlin-sans-fb');
+
 .picker-scroll {
 	mask-image: linear-gradient(
 		to top,
@@ -14,10 +16,10 @@
 	text-align: left;
 	margin-top: 1vh;
 	margin-bottom: 0;
-	font-family: Inter !important;
 	font-size: 50%;
 	line-height: 75%;
 	text-decoration: none;
+	font-weight: bold;
 }
 
 .scrollingdiv-mobile {
@@ -29,8 +31,11 @@
 .scrollingdiv-mobile div:last-child {
 	width: unset !important;
 }
+
 .scrollingdiv-mobile div > div {
-	justify-content: left !important;
+	justify-content: center !important;
+	font-family: 'Berlin Sans FB', sans-serif;
+	width: 100vw;
 }
 .scroll-list-wrapper {
 	/* Thiết lập chiều cao cố định cho container để kích hoạt scroll */
@@ -102,11 +107,11 @@
 
 .picker-scroll .picker-column .picker-item[aria-selected="true"] {
 	color: red; /* Nổi bật mục được chọn */
-	transform: scale(1.05); /* Phóng to nhẹ mục được chọn */
+	transform: scale(2.05); /* Phóng to nhẹ mục được chọn */
 }
 
 @media screen and (max-width: 479px) {
 	.scrollingdiv-mobile {
-		margin-left: 26vw;
+		margin: auto;
 	}
 }

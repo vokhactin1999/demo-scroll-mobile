@@ -25,7 +25,7 @@ function SocialHeader(props) {
 								toggle={toggle}
 								size='xs' className="gago__dropdown">
 								<DropdownToggle
-									className='rounded-pill white'
+									className='rounded-pill white toggle-mobile'
 									style={{
 										background: selectedElement.itemColor,
 										border: "none",

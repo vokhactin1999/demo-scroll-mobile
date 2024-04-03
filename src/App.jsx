@@ -1,12 +1,28 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
 import ContactList from "./component/ContactList";
-
 import GagoLogoAndIconLeft from "./component/GagoLogoAndIconLeft";
 import SideLeft from "./component/SideLeft";
 import SideRight from "./component/SideRight";
+import Spinner from "./component/Spinner";
+import {
+	useLoadingSpinner,
+	useLockRoateHorizontallyOnMobile,
+	useWindowSize,
+} from "./hook";
+import NotAllowBackground from "./component/NotAllowBackground";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 function App() {
+	const windowSize = useWindowSize();
+	const { loading } = useLoadingSpinner();
+	useLockRoateHorizontallyOnMobile();
+
+	const widthBrowser = windowSize.width;
+	const isMobile = widthBrowser <= 450;
+	const allowSee = isMobile || widthBrowser >= 1000;
+
+	if (loading) return <Spinner />;
+	if (!allowSee) return <NotAllowBackground />;
 	return (
 		<div className='body'>
 			<div className='cover-body'>

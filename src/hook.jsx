@@ -1,4 +1,10 @@
-import { useContext, useEffect, useState, useLayoutEffect } from "react";
+import {
+	useContext,
+	useEffect,
+	useState,
+	useLayoutEffect,
+	useRef,
+} from "react";
 import { ScrollInfoContext } from "./ScrollInfoContext";
 import { data_temoin } from "./assets/data-temoin";
 import { content_temoin } from "./assets/content-temoin";
@@ -92,4 +98,51 @@ export const useWindowSize = () => {
 	return windowSize;
 };
 
-export default useWindowSize;
+export const useLoadingSpinner = () => {
+	const [loading, setLoading] = useState(true);
+	const loadingRef = useRef();
+
+	useEffect(() => {
+		loadingRef.current = setTimeout(() => {
+			setLoading(false);
+		}, 1000);
+		return () => {
+			clearTimeout(loadingRef.current);
+		};
+	}, []);
+	return {
+		loading,
+		setLoading,
+	};
+};
+
+export const useLockRoateHorizontallyOnMobile = () => {
+	const windowSize = useWindowSize();
+
+	const isMobile = windowSize.width < 450;
+
+	useEffect(() => {
+		const lockOrientation = () => {
+			if (screen.orientation && screen.orientation.lock && isMobile) {
+				screen.orientation.lock("portrait"); // Lock the orientation to portrait mode
+			}
+		};
+
+		lockOrientation(); // Call the function to lock the orientation when the component mounts
+
+		// Optionally, you can add an event listener to re-lock the orientation if the user tries to change it
+		const handleOrientationChange = () => {
+			lockOrientation();
+		};
+
+		window.addEventListener("orientationchange", handleOrientationChange);
+
+		// Clean up the event listener on component unmount
+		return () => {
+			window.removeEventListener(
+				"orientationchange",
+				handleOrientationChange,
+			);
+		};
+	}, []); // Run this effect only once on component mount
+};

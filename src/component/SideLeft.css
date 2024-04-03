@@ -1,3 +1,7 @@
+@import url("https://fonts.cdnfonts.com/css/inter");
+body {
+	font-family: "Inter", sans-serif;
+}
 .side.gauche.en-savoir-plus {
 	background-color: var(--sombre);
 	justify-content: flex-end;
@@ -157,7 +161,7 @@ a button.link-view-more:hover {
 .texte-temoin {
 	text-align: justify;
 	margin-bottom: 2%;
-	font-family: Inter;
+	font-family: "Inter", sans-serif;
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 1.4;
@@ -165,8 +169,8 @@ a button.link-view-more:hover {
 }
 .titre-temoin.black {
 	font-size: 30px;
-	font-family: brl;
-	font-weight: 700;
+	font-family: "Berlin Sans FB", sans-serif;
+	font-weight: bold;
 	padding-bottom: 16px;
 }
 .viewMore {
@@ -174,6 +178,8 @@ a button.link-view-more:hover {
 }
 .view-more-content {
 	text-align: center;
+	font-size: 14px;
+	margin: auto;
 }
 .social-mobile-1 {
 	position: absolute;
@@ -205,6 +211,18 @@ a button.link-view-more:hover {
 .gago__title-and-view-more {
 	display: flex;
 	justify-content: space-between;
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1367px) {
+	.side.gauche {
+		width: 60vw;
+	}
+	.bloc-text .row {
+		width: 55vw;
+	}
+	.texte-temoin {
+		font-size: 19px;
+	}
 }
 
 @media screen and (max-width: 766px) {
