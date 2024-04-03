@@ -123,26 +123,22 @@ export const useLockRoateHorizontallyOnMobile = () => {
 
 	useEffect(() => {
 		const lockOrientation = () => {
-			if (screen.orientation && screen.orientation.lock && isMobile) {
-				screen.orientation.lock("portrait"); // Lock the orientation to portrait mode
+			const isPortrait = window.innerHeight > window.innerWidth;
+
+			if (isPortrait && screen.orientation && screen.orientation.lock) {
+				screen.orientation.lock("portrait").catch((error) => {
+					console.error("Failed to lock orientation:", error);
+				});
 			}
 		};
 
 		lockOrientation(); // Call the function to lock the orientation when the component mounts
 
-		// Optionally, you can add an event listener to re-lock the orientation if the user tries to change it
-		const handleOrientationChange = () => {
-			lockOrientation();
-		};
-
-		window.addEventListener("orientationchange", handleOrientationChange);
-
-		// Clean up the event listener on component unmount
+		// Clean up any potential orientation lock
 		return () => {
-			window.removeEventListener(
-				"orientationchange",
-				handleOrientationChange,
-			);
+			if (screen.orientation && screen.orientation.unlock) {
+				screen.orientation.unlock();
+			}
 		};
 	}, []); // Run this effect only once on component mount
 };
