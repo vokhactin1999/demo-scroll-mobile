@@ -118,27 +118,40 @@ export const useLoadingSpinner = () => {
 
 export const useLockRoateHorizontallyOnMobile = () => {
 	const windowSize = useWindowSize();
-
+	const [showOverlay, setShowOverlay] = useState(false);
 	const isMobile = windowSize.width < 450;
 
 	useEffect(() => {
-		const lockOrientation = () => {
+		const handleOrientationChange = () => {
 			const isPortrait = window.innerHeight > window.innerWidth;
 
-			if (isPortrait && screen.orientation && screen.orientation.lock) {
-				screen.orientation.lock("portrait").catch((error) => {
-					console.error("Failed to lock orientation:", error);
-				});
+			if (!isPortrait) {
+				// If the device is in landscape mode, force it back to portrait
+
+				if (window.orientation === 90 || window.orientation === -90) {
+					if (isMobile) setShowOverlay(true);
+					// You can also display a message or use other means to inform the user
+					// about the requirement to switch back to portrait mode.
+					// Alternatively, you can programmatically rotate the device back to portrait mode,
+					// but this is generally not recommended as it interferes with the user experience.
+				}
+			} else {
+				setShowOverlay(true);
 			}
 		};
 
-		lockOrientation(); // Call the function to lock the orientation when the component mounts
+		window.addEventListener("orientationchange", handleOrientationChange);
 
-		// Clean up any potential orientation lock
+		// Clean up the event listener on component unmount
 		return () => {
-			if (screen.orientation && screen.orientation.unlock) {
-				screen.orientation.unlock();
-			}
+			window.removeEventListener(
+				"orientationchange",
+				handleOrientationChange,
+			);
 		};
 	}, []); // Run this effect only once on component mount
+
+	return {
+		showOverlay,
+	};
 };

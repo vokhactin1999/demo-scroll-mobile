@@ -15,12 +15,13 @@ import "./App.css";
 function App() {
 	const windowSize = useWindowSize();
 	const { loading } = useLoadingSpinner();
-	useLockRoateHorizontallyOnMobile();
+	const { showOverlay } = useLockRoateHorizontallyOnMobile();
 
 	const widthBrowser = windowSize.width;
 	const isMobile = widthBrowser <= 450;
 	const allowSee = isMobile || widthBrowser >= 1000;
-
+	if (showOverlay)
+		return <Spinner text={"Please rotate the mobile screen vertically"} />;
 	if (loading) return <Spinner />;
 	if (!allowSee) return <NotAllowBackground />;
 	return (
