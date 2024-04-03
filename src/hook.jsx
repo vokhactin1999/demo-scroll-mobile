@@ -136,7 +136,7 @@ export const useLockRoateHorizontallyOnMobile = () => {
 					// but this is generally not recommended as it interferes with the user experience.
 				}
 			} else {
-				setShowOverlay(true);
+				setShowOverlay(false);
 			}
 		};
 
