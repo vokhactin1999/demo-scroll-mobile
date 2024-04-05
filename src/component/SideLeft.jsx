@@ -29,14 +29,14 @@ function SideLeft(props) {
 					target='_blank'
 					className='header-link'
 					style={{ background: `${selectedElement.itemColor}` }}>
-					<img src='behance.svg' />
+					<img src='img-optimize/behance.svg' />
 				</a>
 				<a
 					href='https://www.instagram.com/gago.studios/'
 					target='_blank'
 					className='header-link'
 					style={{ background: `${selectedElement.itemColor}` }}>
-					<img src='instagram.svg' />
+					<img src='img-optimize/instagram.svg' />
 				</a>
 			</div>
 			<div className='social-mobile-2'>
@@ -45,14 +45,14 @@ function SideLeft(props) {
 					target='_blank'
 					className='header-link'
 					style={{ background: `${selectedElement.itemColor}` }}>
-					<img src='Facebook.svg' />
+					<img src='img-optimize/Facebook.svg' />
 				</a>
 				<a
 					href='https://www.linkedin.com/company/gago-studios'
 					target='_blank'
 					className='header-link'
 					style={{ background: `${selectedElement.itemColor}` }}>
-					<img src='Linkedin.svg' />
+					<img src='img-optimize/Linkedin.svg' />
 				</a>
 			</div>
 			<div className='w-layout-vflex flex-block-6'>

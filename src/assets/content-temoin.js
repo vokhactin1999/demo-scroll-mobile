@@ -25,14 +25,14 @@ export const content_temoin = {
 		zh: "我是梦想花园的吉祥物——梦想宝贝Vuon Mong Mo。 受到 Vuon Mong Mo 生态旅游区饲养和珍惜的 Trich Co 鸟类的启发，我作为一名热情友好的导游，帮助游客在花园里享受家庭乐趣和放松.",
 	},
 	6: {
-		en: "Inspired by the Ao Dai - a Vietnamese traditional costume, combined with the shiny yellow color of rice flowers, Be Gao appears with a small, pretty, and adorable image, similar to Vietnamese people. The baby's highlight lies in the crown - a unique combination of the rice grains and the brand logo of Thanh Tin Food.",
-		vi: "Lấy cảm hứng từ tà áo dài truyền thống, kết hợp cùng sắc vàng óng ả của bông lúa, Bé Gạo hiện lên với hình ảnh nhỏ nhắn, xinh xắn, cực kỳ đáng yêu, hệt như con người Việt Nam vậy. Điểm nhấn của bé nằm ở chiếc mão - một sự kết hợp độc đáo giữa hình ảnh hạt gạo và logo thương hiệu của Thành Tín Food.",
-		zh: "受到越南传统服装奥黛的启发，结合米花的亮黄色，Be Gau 呈现出小巧、漂亮、可爱的形象，与越南人相似。 宝宝的亮点在于皇冠——米粒和Thanh Tin Food品牌标志的独特组合。",
-	},
-	7: {
 		en: "TiBi, the mascot of TBI - Tra Vinh Business Incubator, embodies a spirited and creative training team. Inspired by these qualities, GAGO crafted 'Spirit of the Jungle'. TiBi has a petite figure adorned in green and yellow, symbolizes the sanctity of the forest. Sporting glasses and a tie, it exudes the professionalism of a trainer.",
 		vi: "TiBi là bé Mascot của TBI - Vườn Ươm Doanh Nghiệp Tỉnh Trà Vinh. Lấy cảm hứng từ sự nhiệt huyết, sáng tạo và chuyên nghiệp, GAGO đã xây dựng hình tượng TIBI là một 'Tinh Linh của rừng già', có ngoại hình nhỏ nhắn nhưng nổi bật ở cặp mắt kính cùng cà vạt thể hiện sự chỉnh chu của một nhà đào tạo.",
 		zh: "TiBi是TBI-Tra Vinh企业孵化器的吉祥物，代表着一支充满活力和创造力的培训团队。 受这些品质的启发，GAGO 打造了“丛林之灵”。 TiBi身材娇小，身着绿色和黄色装饰，象征着森林的神圣。 戴着运动眼镜，打着领带，散发着训练师的专业精神。",
+	},
+	7: {
+		en: "Inspired by the Ao Dai - a Vietnamese traditional costume, combined with the shiny yellow color of rice flowers, Be Gao appears with a small, pretty, and adorable image, similar to Vietnamese people. The baby's highlight lies in the crown - a unique combination of the rice grains and the brand logo of Thanh Tin Food.",
+		vi: "Lấy cảm hứng từ tà áo dài truyền thống, kết hợp cùng sắc vàng óng ả của bông lúa, Bé Gạo hiện lên với hình ảnh nhỏ nhắn, xinh xắn, cực kỳ đáng yêu, hệt như con người Việt Nam vậy. Điểm nhấn của bé nằm ở chiếc mão - một sự kết hợp độc đáo giữa hình ảnh hạt gạo và logo thương hiệu của Thành Tín Food.",
+		zh: "受到越南传统服装奥黛的启发，结合米花的亮黄色，Be Gau 呈现出小巧、漂亮、可爱的形象，与越南人相似。 宝宝的亮点在于皇冠——米粒和Thanh Tin Food品牌标志的独特组合。",	
 	},
 	8: {
 		en: "The mascot AnTa exudes readiness, enthusiasm, and responsibility. With its distinctive design featuring a helmet, gloves, and the brand's signature red color, AnTa makes a memorable impression. He is always ready to accompany customers at Lien Da Electric Motorcycle and Vehicle Store in Ninh Binh.",
@@ -45,13 +45,13 @@ export const content_temoin = {
 		zh: "银虎和牡丹吉祥物二人组的灵感源自《美女与野兽》，将对比鲜明的个性和谐地融合在一起。 作为看护者和值得信赖的伙伴，他们引导 Adventure Venture 的客户度过丰富多彩的冒险之旅。",
 	},
 	10: {
-		en: "Pippy is a set of 30 Stickers developed from the existing Fried Chicken Mascot. GAGO has crafted Pippy with funny and extremely cute scenes. Pippy will be a close friend, accompanying the children in fun activities and eating.",
-		vi: "Pippy là bộ 30 Sticker được phát triển từ Mascot Gà Rán sẵn có. GAGO đã biến hóa Pippy với những hoạt động ngộ nghĩnh và cực kỳ dễ thương. Pippy sẽ là người bạn thân thiết, đồng hành cùng các bé trong những hoạt động vui chơi và ăn uống.",
-		zh: "Pippy 是一套 30 张贴纸，由现有的炸鸡吉祥物开发而成。 GAGO为皮皮打造了充满搞笑且极其可爱的场景。 皮皮将成为一个亲密的朋友，陪伴孩子们进行有趣的活动和吃饭。",
-	},
-	11: {
 		en: "GH-Creation's mascot draws inspiration from the fusion of science and medicine. Clad in a blue and white palette with a lab coat, it embodies the image of a doctor who has discovered nutritional formulas to boost children's height.",
 		vi: "Sự kết hợp giữa khoa học và y học là nguồn cảm hứng mascot cho thương hiệu GH-Creation. Với tông màu chủ đạo xanh trắng, kết hợp cùng áo blouse. Mascot là hình ảnh đại diện của vị bác sĩ đã khám phá và chế tạo ra nhứng công thức dinh dưỡng giúp tăng chiều cao các bạn nhỏ.",
 		zh: "GH-Creation 的吉祥物从科学与医学的融合中汲取灵感。 它采用蓝白色调和实验室外套，体现了一位发现了提高儿童身高营养配方的医生的形象。",
+	},
+	11: {
+		en: "Pippy is a set of 30 Stickers developed from the existing Fried Chicken Mascot. GAGO has crafted Pippy with funny and extremely cute scenes. Pippy will be a close friend, accompanying the children in fun activities and eating.",
+		vi: "Pippy là bộ 30 Sticker được phát triển từ Mascot Gà Rán sẵn có. GAGO đã biến hóa Pippy với những hoạt động ngộ nghĩnh và cực kỳ dễ thương. Pippy sẽ là người bạn thân thiết, đồng hành cùng các bé trong những hoạt động vui chơi và ăn uống.",
+		zh: "Pippy 是一套 30 张贴纸，由现有的炸鸡吉祥物开发而成。 GAGO为皮皮打造了充满搞笑且极其可爱的场景。 皮皮将成为一个亲密的朋友，陪伴孩子们进行有趣的活动和吃饭。",
 	},
 };

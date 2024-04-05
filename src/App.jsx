@@ -1,3 +1,4 @@
+import React from "react";
 import ContactList from "./component/ContactList";
 import GagoLogoAndIconLeft from "./component/GagoLogoAndIconLeft";
 import SideLeft from "./component/SideLeft";
@@ -20,10 +21,28 @@ function App() {
 	const widthBrowser = windowSize.width;
 	const isMobile = widthBrowser <= 450;
 	const allowSee = isMobile || widthBrowser >= 1000;
-	if (showOverlay)
-		return <Spinner text={"Please rotate the mobile screen vertically"} />;
 	if (loading) return <Spinner />;
-	if (!allowSee) return <NotAllowBackground />;
+	if (showOverlay) {
+		return (
+			<div className='spinner-container'>
+				<div>
+					<img
+						src='img-optimize/Logo.svg'
+						width='85px'
+						height='105px'
+						alt=''
+					/>
+				</div>
+				<div>
+					<p>{"Please rotate the mobile screen vertically"}</p>
+				</div>
+				<div></div>
+			</div>
+		);
+	} else if (!allowSee && !showOverlay) {
+		return <NotAllowBackground />;
+	}
+
 	return (
 		<div className='body'>
 			<div className='cover-body'>

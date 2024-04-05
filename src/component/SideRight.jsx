@@ -17,6 +17,7 @@ function SideRight(props) {
 				<GagoScrollingPc />
 			) : (
 				<GagoScrollingMobile />
+				
 			)}
 			<SocialHeader />
 		</div>

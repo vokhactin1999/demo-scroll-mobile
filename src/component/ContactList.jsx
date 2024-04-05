@@ -5,16 +5,32 @@ function ContactList(props) {
 		<>
 			<div className='contact-social-list'>
 				<a target='_blank' href='https://m.me/111087687927395'>
-					<img className='image-icon' src='messenger.png' alt='' />
+					<img
+						className='image-icon'
+						src='img-optimize/messenger.png'
+						alt=''
+					/>
 				</a>
 				<a target='_blank' href='https://wa.me/84984802030'>
-					<img className='image-icon' src='phone.png' alt='' />
+					<img
+						className='image-icon'
+						src='img-optimize/phone.png'
+						alt=''
+					/>
 				</a>
 				<a target='_blank' href='https://t.me/+84984802030'>
-					<img className='image-icon' src='telegram.png' alt='' />
+					<img
+						className='image-icon'
+						src='img-optimize/telegram.png'
+						alt=''
+					/>
 				</a>
 				<a target='_blank' href='https://zalo.me/0938346221'>
-					<img className='image-icon' src='zalo.png' alt='' />
+					<img
+						className='image-icon'
+						src='img-optimize/zalo.png'
+						alt=''
+					/>
 				</a>
 			</div>
 		</>

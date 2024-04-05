@@ -10,6 +10,10 @@ import { data_temoin } from "./assets/data-temoin";
 import { content_temoin } from "./assets/content-temoin";
 import { useTranslation } from "react-i18next";
 
+// import imagemin from "imagemin";
+// import imageminPngquant from "imagemin-pngquant";
+// import imageminMozjpeg from "imagemin-mozjpeg";
+
 export const useGetElementById = () => {
 	const { selectedId } = useContext(ScrollInfoContext);
 
@@ -155,3 +159,32 @@ export const useLockRoateHorizontallyOnMobile = () => {
 		showOverlay,
 	};
 };
+
+// export const useImgOptimized = () => {
+// 	const inputDir = "img";
+// 	const outputDir = "assets";
+
+// 	useEffect(() => {
+// 		const optimizeImages = async () => {
+// 			try {
+// 				const files = await imagemin(
+// 					[`${inputDir}/*.png`, `${inputDir}/*.jpg`],
+// 					{
+// 						destination: outputDir,
+// 						plugins: [
+// 							imageminPngquant({ quality: [0.6, 0.8] }), // Tối ưu hóa hình ảnh PNG với pngquant
+// 							imageminMozjpeg({ quality: 75 }), // Tối ưu hóa hình ảnh JPEG với MozJPEG
+// 						],
+// 					},
+// 				);
+// 				console.log("Hình ảnh đã được tối ưu hóa:", files);
+// 			} catch (error) {
+// 				console.error("Lỗi khi tối ưu hóa hình ảnh:", error);
+// 			}
+// 		};
+
+// 		optimizeImages();
+
+// 		// eslint-disable-next-line react-hooks/exhaustive-deps
+// 	}, []);
+// };

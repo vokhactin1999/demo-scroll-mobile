@@ -11,7 +11,7 @@ function GagoLogoAndIconLeft(props) {
 				<div className='logo-member container h-80'>
 					<div className='row align-items-start w-100'>
 						<div className='col-3 p-0'>
-							<img id='logo' src='Logo.png' alt='' />
+							<img id='logo' src='img-optimize/Logo.png' alt='' />
 						</div>
 						<div className='gago__logo-list col-9 pl-1'>
 							<div className='row align-items-start pb-1'>
@@ -20,7 +20,7 @@ function GagoLogoAndIconLeft(props) {
 										<div className='member-content'>
 											<img
 												className='member'
-												src='Frame 4.png'
+												src='img-optimize/Frame 4.png'
 												style={{
 													backgroundRepeat:
 														"no-repeat",
@@ -34,7 +34,7 @@ function GagoLogoAndIconLeft(props) {
 									<div className='member-content'>
 										<img
 											className='member'
-											src='Frame 5.png'
+											src='img-optimize/Frame 5.png'
 											style={{
 												backgroundRepeat: "no-repeat",
 												backgroundSize: "cover",
@@ -46,7 +46,7 @@ function GagoLogoAndIconLeft(props) {
 									<div className='member-content'>
 										<img
 											className='member'
-											src='Frame 6.png'
+											src='img-optimize/Frame 6.png'
 											style={{
 												backgroundRepeat: "no-repeat",
 												backgroundSize: "cover",
@@ -58,7 +58,7 @@ function GagoLogoAndIconLeft(props) {
 									<div className='member-content'>
 										<img
 											className='member'
-											src='Frame 7.png'
+											src='img-optimize/Frame 7.png'
 											style={{
 												backgroundRepeat: "no-repeat",
 												backgroundSize: "cover",
@@ -70,7 +70,7 @@ function GagoLogoAndIconLeft(props) {
 									<div className='member-content'>
 										<img
 											className='member'
-											src='Frame 8.png'
+											src='img-optimize/Frame 8.png'
 											style={{
 												backgroundRepeat: "no-repeat",
 												backgroundSize: "cover",
@@ -84,7 +84,7 @@ function GagoLogoAndIconLeft(props) {
 									<div className='member-content'>
 										<img
 											className='member'
-											src='Frame 9.png'
+											src='img-optimize/Frame 9.png'
 											style={{
 												backgroundRepeat: "no-repeat",
 												backgroundSize: "cover",
@@ -96,7 +96,7 @@ function GagoLogoAndIconLeft(props) {
 									<div className='member-content'>
 										<img
 											className='member'
-											src='Frame 10.png'
+											src='img-optimize/Frame 10.png'
 											style={{
 												backgroundRepeat: "no-repeat",
 												backgroundSize: "cover",
@@ -108,7 +108,7 @@ function GagoLogoAndIconLeft(props) {
 									<div className='member-content'>
 										<img
 											className='member'
-											src='Frame 11.png'
+											src='img-optimize/Frame 11.png'
 											style={{
 												backgroundRepeat: "no-repeat",
 												backgroundSize: "cover",
@@ -120,7 +120,7 @@ function GagoLogoAndIconLeft(props) {
 									<div className='member-content'>
 										<img
 											className='member'
-											src='Frame 12.png'
+											src='img-optimize/Frame 12.png'
 											style={{
 												backgroundRepeat: "no-repeat",
 												backgroundSize: "cover",

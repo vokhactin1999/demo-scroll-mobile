@@ -23,7 +23,8 @@ function SocialHeader(props) {
 							<Dropdown
 								isOpen={dropdownOpen}
 								toggle={toggle}
-								size='xs' className="gago__dropdown">
+								size='xs'
+								className='gago__dropdown'>
 								<DropdownToggle
 									className='rounded-pill white toggle-mobile'
 									style={{
@@ -62,7 +63,7 @@ function SocialHeader(props) {
 									style={{
 										background: `${selectedElement.itemColor}`,
 									}}>
-									<img src='behance.svg' />
+									<img src='img-optimize/behance.svg' />
 								</a>
 								<a
 									href='https://www.instagram.com/gago.studios/'
@@ -71,7 +72,7 @@ function SocialHeader(props) {
 									style={{
 										background: `${selectedElement.itemColor}`,
 									}}>
-									<img src='instagram.svg' />
+									<img src='img-optimize/instagram.svg' />
 								</a>
 								<a
 									href='https://www.facebook.com/gagostudios'
@@ -80,7 +81,7 @@ function SocialHeader(props) {
 									style={{
 										background: `${selectedElement.itemColor}`,
 									}}>
-									<img src='Facebook.svg' />
+									<img src='img-optimize/Facebook.svg' />
 								</a>
 								<a
 									href='https://www.linkedin.com/company/gago-studios'
@@ -89,7 +90,7 @@ function SocialHeader(props) {
 									style={{
 										background: `${selectedElement.itemColor}`,
 									}}>
-									<img src='Linkedin.svg' />
+									<img src='img-optimize/Linkedin.svg' />
 								</a>
 							</div>
 						</div>

@@ -109,9 +109,41 @@
 	color: red; /* Nổi bật mục được chọn */
 	transform: scale(2.05); /* Phóng to nhẹ mục được chọn */
 }
-
+.bottom-mobile{
+	display: none;
+}
 @media screen and (max-width: 479px) {
 	.scrollingdiv-mobile {
 		margin: auto;
+	}
+	.bottom-mobile{
+		display: flex;
+		display: flex;
+		justify-content: space-between;
+		width: 100vw;
+		height: 30%;
+		
+	}
+	.scrollingdiv-mobile .bottom-mobile{
+		display: flex;
+	}
+	.gago__dropdown_mobile{
+		width: 100%!important;
+		font-size: 16px;
+	}
+	.scrollingdiv-mobile .bottom-mobile .bottom-mobile-r{
+		width: 100%!important;
+		display: flex;
+		justify-content: start!important;
+		align-items: center;
+	}
+	.scrollingdiv-mobile .bottom-mobile .bottom-mobile-r .item{
+		margin-right: 10px;
+	}
+	.scrollingdiv-mobile .bottom-mobile .bottom-mobile-l{
+		width: 100%!important;
+		display: flex;
+		align-items: center;
+		
 	}
 }
